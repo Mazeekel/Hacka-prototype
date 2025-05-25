@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  construction_responsible: one
+  supervisor: one
+  service_order: one
+  climatic_condition_morning: 1
+  climatic_condition_afternoon: 1
+  teams_departure_time: 2025-05-25 05:20:22
+  teams_arrival_time: 2025-05-25 05:20:22
+  teams_exit_time: 2025-05-25 05:20:22
+  teams_return_time: 2025-05-25 05:20:22
+
+two:
+  construction_responsible: two
+  supervisor: two
+  service_order: two
+  climatic_condition_morning: 1
+  climatic_condition_afternoon: 1
+  teams_departure_time: 2025-05-25 05:20:22
+  teams_arrival_time: 2025-05-25 05:20:22
+  teams_exit_time: 2025-05-25 05:20:22
+  teams_return_time: 2025-05-25 05:20:22

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Daily service conditions</h1>
+
+<div id="daily_service_conditions">
+  <% @daily_service_conditions.each do |daily_service_condition| %>
+    <%= render daily_service_condition %>
+    <p>
+      <%= link_to "Show this daily service condition", daily_service_condition %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New daily service condition", new_daily_service_condition_path %>

@@ -1,0 +1,1 @@
+json.partial! "daily_report_resource_allocations/daily_report_resource_allocation", daily_report_resource_allocation: @daily_report_resource_allocation

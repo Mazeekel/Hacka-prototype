@@ -1,0 +1,37 @@
+<%= form_with(model: daily_report_resource_allocation) do |form| %>
+  <% if daily_report_resource_allocation.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(daily_report_resource_allocation.errors.count, "error") %> prohibited this daily_report_resource_allocation from being saved:</h2>
+
+      <ul>
+        <% daily_report_resource_allocation.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :stocking_id, style: "display: block" %>
+    <%= form.text_field :stocking_id %>
+  </div>
+
+  <div>
+    <%= form.label :daily_report_id, style: "display: block" %>
+    <%= form.text_field :daily_report_id %>
+  </div>
+
+  <div>
+    <%= form.label :quantity, style: "display: block" %>
+    <%= form.number_field :quantity %>
+  </div>
+
+  <div>
+    <%= form.label :unit, style: "display: block" %>
+    <%= form.number_field :unit %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

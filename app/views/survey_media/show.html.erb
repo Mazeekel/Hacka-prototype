@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @survey_medium %>
+
+<div>
+  <%= link_to "Edit this survey medium", edit_survey_medium_path(@survey_medium) %> |
+  <%= link_to "Back to survey media", survey_media_path %>
+
+  <%= button_to "Destroy this survey medium", @survey_medium, method: :delete %>
+</div>

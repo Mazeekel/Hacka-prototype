@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Daily report resource allocations</h1>
+
+<div id="daily_report_resource_allocations">
+  <% @daily_report_resource_allocations.each do |daily_report_resource_allocation| %>
+    <%= render daily_report_resource_allocation %>
+    <p>
+      <%= link_to "Show this daily report resource allocation", daily_report_resource_allocation %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New daily report resource allocation", new_daily_report_resource_allocation_path %>

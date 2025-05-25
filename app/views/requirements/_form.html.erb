@@ -1,0 +1,47 @@
+<%= form_with(model: requirement) do |form| %>
+  <% if requirement.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(requirement.errors.count, "error") %> prohibited this requirement from being saved:</h2>
+
+      <ul>
+        <% requirement.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :department_id, style: "display: block" %>
+    <%= form.text_field :department_id %>
+  </div>
+
+  <div>
+    <%= form.label :responsible_id, style: "display: block" %>
+    <%= form.text_field :responsible_id %>
+  </div>
+
+  <div>
+    <%= form.label :address_id, style: "display: block" %>
+    <%= form.text_field :address_id %>
+  </div>
+
+  <div>
+    <%= form.label :type_of_requirement, style: "display: block" %>
+    <%= form.number_field :type_of_requirement %>
+  </div>
+
+  <div>
+    <%= form.label :document_number, style: "display: block" %>
+    <%= form.number_field :document_number %>
+  </div>
+
+  <div>
+    <%= form.label :telephone, style: "display: block" %>
+    <%= form.number_field :telephone %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

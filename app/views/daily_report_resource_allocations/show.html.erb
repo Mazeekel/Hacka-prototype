@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @daily_report_resource_allocation %>
+
+<div>
+  <%= link_to "Edit this daily report resource allocation", edit_daily_report_resource_allocation_path(@daily_report_resource_allocation) %> |
+  <%= link_to "Back to daily report resource allocations", daily_report_resource_allocations_path %>
+
+  <%= button_to "Destroy this daily report resource allocation", @daily_report_resource_allocation, method: :delete %>
+</div>

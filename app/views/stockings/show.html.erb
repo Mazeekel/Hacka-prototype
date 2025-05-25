@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @stocking %>
+
+<div>
+  <%= link_to "Edit this stocking", edit_stocking_path(@stocking) %> |
+  <%= link_to "Back to stockings", stockings_path %>
+
+  <%= button_to "Destroy this stocking", @stocking, method: :delete %>
+</div>

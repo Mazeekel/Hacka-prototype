@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @service_responsible %>
+
+<div>
+  <%= link_to "Edit this service responsible", edit_service_responsible_path(@service_responsible) %> |
+  <%= link_to "Back to service responsibles", service_responsibles_path %>
+
+  <%= button_to "Destroy this service responsible", @service_responsible, method: :delete %>
+</div>

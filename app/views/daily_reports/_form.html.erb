@@ -1,0 +1,62 @@
+<%= form_with(model: daily_report) do |form| %>
+  <% if daily_report.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(daily_report.errors.count, "error") %> prohibited this daily_report from being saved:</h2>
+
+      <ul>
+        <% daily_report.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :construction_responsible_id, style: "display: block" %>
+    <%= form.text_field :construction_responsible_id %>
+  </div>
+
+  <div>
+    <%= form.label :supervisor_id, style: "display: block" %>
+    <%= form.text_field :supervisor_id %>
+  </div>
+
+  <div>
+    <%= form.label :service_order_id, style: "display: block" %>
+    <%= form.text_field :service_order_id %>
+  </div>
+
+  <div>
+    <%= form.label :climatic_condition_morning, style: "display: block" %>
+    <%= form.number_field :climatic_condition_morning %>
+  </div>
+
+  <div>
+    <%= form.label :climatic_condition_afternoon, style: "display: block" %>
+    <%= form.number_field :climatic_condition_afternoon %>
+  </div>
+
+  <div>
+    <%= form.label :teams_departure_time, style: "display: block" %>
+    <%= form.datetime_field :teams_departure_time %>
+  </div>
+
+  <div>
+    <%= form.label :teams_arrival_time, style: "display: block" %>
+    <%= form.datetime_field :teams_arrival_time %>
+  </div>
+
+  <div>
+    <%= form.label :teams_exit_time, style: "display: block" %>
+    <%= form.datetime_field :teams_exit_time %>
+  </div>
+
+  <div>
+    <%= form.label :teams_return_time, style: "display: block" %>
+    <%= form.datetime_field :teams_return_time %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

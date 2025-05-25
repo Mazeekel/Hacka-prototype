@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  daily_report: one
+  responsible: one
+  usage_time: 2025-05-25 05:27:49
+  equipment: MyString
+
+two:
+  daily_report: two
+  responsible: two
+  usage_time: 2025-05-25 05:27:49
+  equipment: MyString

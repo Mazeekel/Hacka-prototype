@@ -1,0 +1,2 @@
+class Stocking < ApplicationRecord
+end

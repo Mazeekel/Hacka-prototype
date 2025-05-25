@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @daily_service_condition %>
+
+<div>
+  <%= link_to "Edit this daily service condition", edit_daily_service_condition_path(@daily_service_condition) %> |
+  <%= link_to "Back to daily service conditions", daily_service_conditions_path %>
+
+  <%= button_to "Destroy this daily service condition", @daily_service_condition, method: :delete %>
+</div>

@@ -1,0 +1,27 @@
+<%= form_with(model: daily_service_condition) do |form| %>
+  <% if daily_service_condition.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(daily_service_condition.errors.count, "error") %> prohibited this daily_service_condition from being saved:</h2>
+
+      <ul>
+        <% daily_service_condition.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :daily_report_id, style: "display: block" %>
+    <%= form.text_field :daily_report_id %>
+  </div>
+
+  <div>
+    <%= form.label :condition, style: "display: block" %>
+    <%= form.text_field :condition %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

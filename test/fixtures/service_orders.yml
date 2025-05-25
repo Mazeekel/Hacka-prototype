@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  requirement: one
+  status: 1
+  type_of_service: 1
+  service_cost: 1
+  attendimment_feedback: MyText
+  finished_at: 2025-05-25 05:17:10
+
+two:
+  requirement: two
+  status: 1
+  type_of_service: 1
+  service_cost: 1
+  attendimment_feedback: MyText
+  finished_at: 2025-05-25 05:17:10

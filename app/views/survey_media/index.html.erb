@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Survey media</h1>
+
+<div id="survey_media">
+  <% @survey_media.each do |survey_medium| %>
+    <%= render survey_medium %>
+    <p>
+      <%= link_to "Show this survey medium", survey_medium %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New survey medium", new_survey_medium_path %>

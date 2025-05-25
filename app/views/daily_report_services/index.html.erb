@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Daily report services</h1>
+
+<div id="daily_report_services">
+  <% @daily_report_services.each do |daily_report_service| %>
+    <%= render daily_report_service %>
+    <p>
+      <%= link_to "Show this daily report service", daily_report_service %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New daily report service", new_daily_report_service_path %>

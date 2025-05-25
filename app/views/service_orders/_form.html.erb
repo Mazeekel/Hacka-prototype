@@ -1,0 +1,47 @@
+<%= form_with(model: service_order) do |form| %>
+  <% if service_order.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(service_order.errors.count, "error") %> prohibited this service_order from being saved:</h2>
+
+      <ul>
+        <% service_order.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :requirement_id, style: "display: block" %>
+    <%= form.text_field :requirement_id %>
+  </div>
+
+  <div>
+    <%= form.label :status, style: "display: block" %>
+    <%= form.number_field :status %>
+  </div>
+
+  <div>
+    <%= form.label :type_of_service, style: "display: block" %>
+    <%= form.number_field :type_of_service %>
+  </div>
+
+  <div>
+    <%= form.label :service_cost, style: "display: block" %>
+    <%= form.number_field :service_cost %>
+  </div>
+
+  <div>
+    <%= form.label :attendimment_feedback, style: "display: block" %>
+    <%= form.text_area :attendimment_feedback %>
+  </div>
+
+  <div>
+    <%= form.label :finished_at, style: "display: block" %>
+    <%= form.datetime_field :finished_at %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

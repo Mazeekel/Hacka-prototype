@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Daily report equipment usages</h1>
+
+<div id="daily_report_equipment_usages">
+  <% @daily_report_equipment_usages.each do |daily_report_equipment_usage| %>
+    <%= render daily_report_equipment_usage %>
+    <p>
+      <%= link_to "Show this daily report equipment usage", daily_report_equipment_usage %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New daily report equipment usage", new_daily_report_equipment_usage_path %>

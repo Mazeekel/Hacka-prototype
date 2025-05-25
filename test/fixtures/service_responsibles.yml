@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  daily_report: one
+  responsible: one
+  responsible_function: MyText
+  authorization: MyString
+
+two:
+  daily_report: two
+  responsible: two
+  responsible_function: MyText
+  authorization: MyString

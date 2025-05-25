@@ -1,0 +1,2 @@
+module ServiceResponsiblesHelper
+end

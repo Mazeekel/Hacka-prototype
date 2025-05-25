@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @service_order %>
+
+<div>
+  <%= link_to "Edit this service order", edit_service_order_path(@service_order) %> |
+  <%= link_to "Back to service orders", service_orders_path %>
+
+  <%= button_to "Destroy this service order", @service_order, method: :delete %>
+</div>

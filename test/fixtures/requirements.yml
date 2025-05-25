@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  department: one
+  responsible: one
+  address: one
+  type_of_requirement: 1
+  document_number: 1
+  telephone: 1
+
+two:
+  department: two
+  responsible: two
+  address: two
+  type_of_requirement: 1
+  document_number: 1
+  telephone: 1

@@ -1,0 +1,2 @@
+module SurveyMediaHelper
+end
