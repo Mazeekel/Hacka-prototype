@@ -1,24 +1,3 @@
-# README
+A prototype API I`ve made in a few hours to prove feasibility of the project I was working on.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To summarize, it aims to fully digitalize one(at first) of the many process being executed by the city of Guarulhos` administrators. Its the single biggest, non-capital city of Brazil with over 1.2 Milion Habitants.
